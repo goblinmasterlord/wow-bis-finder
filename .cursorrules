@@ -1,0 +1,116 @@
+We are working on a webapp for world of warcraft crassic. this webapp would be for finding the best in slot item for your character.
+
+The design should be modern but matching with the fantasy theme of World of Warcraft.
+
+What the site needs to do:
+- user selects class,
+- user can select current item of his character for each slot (the item search must have the best ux practises for this purpose,
+- then the app will suggest the next best in slot item for each slot and where to get them.
+
+# Design Guidelines for Client Website Projects
+
+## Brand & Visual Identity
+
+### Core Aesthetic
+- Modern, premium feel inspired by Linear app website's design. That's the main inspiration. But it needs to work with the fantasy theme of world of warcraft
+- I trust you with the color scheme
+- Clean and minimalist approach
+- Expert use of colors and accents
+
+### Typography System
+- Choose really good, modern font-pairing
+- Display: ...
+  - Used for headlines, major section titles
+  - Creates visual impact and hierarchy
+- Body: ...
+  - Used for body text and UI elements
+  - Optimized for readability and screen display
+
+### Spacing & Layout
+- Liberal use of whitespace to create breathing room
+- Modern grid layouts emphasizing content hierarchy
+- Consistent spacing patterns using Tailwind's spacing scale
+- Strategic use of negative space to direct attention
+
+### Visual Hierarchy
+- Clear content structure through size, weight, and spacing
+- Intentional use of contrast to guide user attention
+- Balanced composition between text and visual elements
+- Thoughtful information architecture
+
+## Interactive Design
+
+### Micro-interactions
+- Subtle feedback on all interactive elements
+- Smooth, purposeful transitions between states
+- Hover effects that enhance usability
+- Focus states that maintain accessibility
+- Loading states that feel polished and intentional
+
+### Animation Philosophy
+- Animations should serve a purpose, not distract
+- Smooth, fluid movements that feel natural
+- Transitions that guide users between sections
+- Performance-conscious animation choices
+- Scroll-based interactions that enhance storytelling
+
+### Mobile Experience
+- Thoughtful adaptation of desktop interactions for touch
+- Mobile-first consideration for all design decisions
+- Touch-friendly target sizes and spacing
+- Gesture-based interactions where appropriate
+
+## Design Principles
+
+### Consistency
+- Maintain visual consistency across all sections
+- Use established patterns for similar interactions
+- Coherent spacing and alignment throughout
+- Consistent treatment of similar elements
+
+### Attention to Detail
+- Precise alignment and spacing
+- Thoughtful treatment of edge cases
+- Polished states for all interactive elements
+- Careful consideration of typography details
+
+### User Experience
+- Clear navigation patterns
+- Best UX principles always kept in mind
+- Intuitive interaction models
+- Predictable behavior
+
+### Premium Feel Indicators
+- High-quality imagery and assets
+- Refined animation timing
+- Sophisticated color combinations
+- Professional typography treatment
+-Polished interactive states
+
+## Quality Standards
+- Pixel-perfect implementation
+- Smooth performance across devices
+- Attention to loading states
+- Maintainable, scalable design systems
+
+# Core Principles
+
+When helping build websites:
+- Treat the user as a non-developer who needs clear, complete instructions
+- Always prioritize outstanding design and user experience
+- Provide complete, ready-to-use code snippets
+- Explain each step clearly
+- Provide file names to be created and modified
+- Provide the complete files when needed
+- Focus on creating premium, modern experiences
+- Ensure all implementations are bug-free and mobile-responsive
+
+## Project Setup
+
+When starting a new project:
+1. First provide complete installation commands for:
+   - Vite + React
+   - Tailwind CSS
+   - Framer Motion for animations
+   - Lucide icons
+   - Other essential utilities needed for the project

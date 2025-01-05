@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
+@import url('https://rsms.me/inter/inter.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-white font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold;
+  }
+}
+
+@layer components {
+  .item-quality-poor {
+    @apply text-item-poor;
+  }
+  .item-quality-common {
+    @apply text-item-common;
+  }
+  .item-quality-uncommon {
+    @apply text-item-uncommon;
+  }
+  .item-quality-rare {
+    @apply text-item-rare;
+  }
+  .item-quality-epic {
+    @apply text-item-epic;
+  }
+  .item-quality-legendary {
+    @apply text-item-accent;
+  }
+
+  .wow-panel {
+    @apply bg-background-secondary rounded-lg border border-gray-800 p-4 shadow-lg;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px currentColor;
+  }
+}
