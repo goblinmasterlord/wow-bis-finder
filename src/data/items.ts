@@ -1,37 +1,72 @@
-import { Item } from '@/types/item';
+import { Item } from '../types/item';
 
-// Example rogue BiS items for Phase 1
+// BiS items for Phase 1
 export const rogueBiSItems: Record<string, Item> = {
   head: {
     id: 1,
-    name: "Crown of Endless Knowledge",
+    name: "Bloodfang Hood",
     quality: 'epic',
-    itemLevel: 120,
+    itemLevel: 76,
     requiredLevel: 60,
     slot: 'head',
     iconUrl: '/item-icons/head.png',
     stats: {
-      agility: 30,
-      stamina: 25,
+      agility: 40,
+      stamina: 28,
       criticalStrike: 2,
       hit: 1
     },
     source: {
       type: 'raid',
-      location: 'Molten Core - Ragnaros',
+      location: 'Blackwing Lair - Nefarian',
       dropRate: 15
     }
-  },
-  // Add more BiS items...
+  }
 };
 
 // Database of all available items
 export const itemDatabase: Record<string, Item[]> = {
   head: [
+    {
+      id: 101,
+      name: "Crown of Endless Knowledge",
+      quality: 'epic',
+      itemLevel: 66,
+      requiredLevel: 60,
+      slot: 'head',
+      iconUrl: '/item-icons/head.png',
+      stats: {
+        agility: 30,
+        stamina: 25,
+        criticalStrike: 1
+      },
+      source: {
+        type: 'raid',
+        location: 'Molten Core - Ragnaros',
+        dropRate: 15
+      }
+    },
     rogueBiSItems.head,
-    // Add more head items...
-  ],
-  // Add more slots...
+    {
+      id: 102,
+      name: "Mask of the Unforgiven",
+      quality: 'rare',
+      itemLevel: 61,
+      requiredLevel: 58,
+      slot: 'head',
+      iconUrl: '/item-icons/head2.png',
+      stats: {
+        agility: 25,
+        stamina: 20,
+        criticalStrike: 1
+      },
+      source: {
+        type: 'dungeon',
+        location: 'Stratholme',
+        dropRate: 18
+      }
+    }
+  ]
 };
 
 // Search function
@@ -43,4 +78,9 @@ export const searchItems = (query: string, slot: string): Item[] => {
     item.name.toLowerCase().includes(lowerQuery) ||
     item.source.location.toLowerCase().includes(lowerQuery)
   );
+};
+
+// Get BiS item for a slot
+export const getBisItem = (slot: string): Item | undefined => {
+  return rogueBiSItems[slot];
 };
